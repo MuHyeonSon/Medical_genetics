@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+print"Enter the gene you want to find.","\n";
+my $gene = <STDIN>;
+chomp($gene);
+$gene = uc($gene)
+
+my @gennes = qw(IBD7 AGRN TNFRSF4 DVL1 ATAD2C WARP);
+@gennes = (sort{$a cmp $b} @gennes)
+print(@gennes,"\n");
+my %g = {0=>$gennes[0],1=>$gennes[1],2=>$gennes[2],3=>$genes[3],4=>$gene[4],5=>$gene[5]};
+
+
+
+
+

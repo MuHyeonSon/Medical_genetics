@@ -1,0 +1,16 @@
+#hw3
+
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+my @string = <>;
+chomp @string;
+
+foreach my $str(sort{$b <=> $a} @string)
+{
+      print" $str";
+}
+
+
+
